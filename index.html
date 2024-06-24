@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<h1 id="title">Survery Form</h1>
+<p id="description">Extra classes during the school holidays</p>
+
+<form id="survey-form" action="URL" method="get">
+  <fieldset>
+    <legend>Your Personal Details</legend>
+<label id="name-label" class="inline">Name: </label><input id="name" type="text" placeholder="Enter your name" required/>
+<label id="email-label">Email: </label><input id="email" type="email" placeholder="Enter your email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+<label id="number-label">Age: </label><input id="number" type="number" placeholder="Enter your age this year" min="11" max="17" />
+</fieldset>
+
+<fieldset>
+  <legend>Are You A Current Student?</legend>
+<label>
+<select id="dropdown">
+   <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+</select>
+</label>
+</fieldset>
+
+<fieldset>
+        <legend>Class Session Preference</legend>
+        <label for="morning-session"><input id="morning-session" type="radio" name="class-session" value="morning" class="inline" checked /> Morning (9am - 12pm)</label>
+        <label for="evening-session"><input id="business-account" type="radio" name="class-session" value="evening" class="inline" /> Evening (5pm - 9pm)</label>
+      </fieldset>
+
+<fieldset>
+  <legend>Subjects</legend>
+  <label id="mathematics-label">
+    <input for="mathematics-label" name="subjects" type="checkbox" value="mathematics" class="inline" checked/>Mathematics
+    </label>
+     <label id="english-label">
+    <input for="english-label" name="subjects" type="checkbox" value="english" class="inline" />English</label>
+     <label id="science-label">
+    <input for="science-label" name="subjects" type="checkbox" value="science" class="inline" />Science</label>
+</fieldset>
+
+<fieldset>
+  <legend>Additional Remarks</legend>
+  <label>
+    <textarea id="add-remarks" name="remarks" rows="5" cols="30" placeholder="You should know that..."></textarea>
+  </label>
+</fieldset>
+
+<button id="submit" type="submit">Submit</button>
+</form>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*/
+
+body {
+    background-color: #fff;
+    color: black;
+  }
+  
+  form {
+    width: 100vw;
+    max-width: 580px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 1.5em;
+    border-radius: 10px;
+    background-color: rgb(182, 211, 205);
+  }
+  
+  label {
+    display: block;
+    margin: 1rem 0;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  #title {
+    padding: 1em 0 0 0;
+    margin: 0 0 0.2em 0;
+  }
+  
+  #description {
+    margin: 0 0 1.5em 0;
+  }
+  
+  fieldset {
+    margin: 10 30;
+    padding: 0.8rem 15;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    margin: 1px 0 3px 0;
+    width: 100%;
+    min-height: 1.5em;
+  }
+  
+  
+  button {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2.5em;
+    font-size: 1rem;
+    background-color: #3c80d4;
+    border-color: rgba(29, 29, 29, 0.75);
+    min-width: 300px;
+    color: #eee;
+  }
+
+  /* Media query for viewport  
+   width less than 800px */
+@media (max-width: 600px) { 
+
+  
+} 
+ 
+/* Media query for viewport width 
+  greater than 800px */
+@media (min-width: 600px) { 
+   
+}
+  
+  
+  
+  
+  
